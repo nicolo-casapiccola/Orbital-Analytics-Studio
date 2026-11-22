@@ -19,7 +19,8 @@ import { FilterBar } from './components/FilterBar';
 import { OverviewSection } from './components/sections/OverviewSection';
 import { OperatorsSection } from './components/sections/OperatorsSection';
 import { PurposesSection } from './components/sections/PurposesSection';
-import { DebrisSection } from './components/sections/DebrisSection';
+import { SatcatSection } from './components/sections/SatcatSection';
+import { ItalySection } from './components/sections/ItalySection';
 import { DataTable } from './components/DataTable';
 
 const dataset = datasetJson as unknown as DatasetFile;
@@ -96,7 +97,8 @@ export default function App() {
         <div className="mt-14 space-y-14 sm:mt-16 sm:space-y-16">
           <OperatorsSection records={records} />
           <PurposesSection records={records} />
-          <DebrisSection catalog={dataset.meta.catalog} />
+          <SatcatSection catalog={dataset.meta.catalog} />
+          <ItalySection italy={dataset.italy} />
           <DataTable records={records} />
         </div>
       </main>
@@ -105,12 +107,11 @@ export default function App() {
         <div className="mx-auto flex max-w-[1200px] flex-col gap-2 px-4 py-8 text-[12px] leading-relaxed text-[#8E8E93] sm:px-6">
           <p>
             <strong className="font-semibold text-[#6E6E73]">Fonti.</strong> Union of Concerned
-            Scientists, Satellite Database (snapshot 27 aprile 2023) e SATCAT (68.140 oggetti
-            tracciati).
+            Scientists Satellite Database (snapshot 27 aprile 2023), catalogo completo SATCAT (68.140 oggetti
+            tracciati dal 1957 al 2026) e Registro Nazionale degli Oggetti Spaziali dell&apos;ASI (Agenzia Spaziale Italiana).
           </p>
           <p>
-            I dati sono precalcolati da <code>scripts/prepare-data.mjs</code> a partire dai CSV
-            nella cartella <code>/datasets</code>.
+            Progetto svolto da <code>Baccichet Martina</code> e <code>Casapiccola Nicolò</code>.
           </p>
         </div>
       </footer>

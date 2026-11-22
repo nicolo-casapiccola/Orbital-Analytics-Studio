@@ -1,0 +1,72 @@
+Denominazione;Categoria e stato;Denominazione COSPAR;Altezze Perigeo x Apogeo (km);Data di Lancio;Data di Rientro;Inclinazione (gradi);Periodo orbitale (minuti);Funzione principale;Operatore Spaziale;Luogo di lancio;Registro ONU
+SAN MARCO 1;P/L (N);1964-084A;151 x 185;15/12/1964;13/09/1965;37.75;87.85;Scienza;Commissione per le Ricerche Spaziali CRS/CNR;Wallops Island, Virginia (USA).;Si
+SAN MARCO 2;P/L (N);1967-038A;154 x 196;26/04/1967;14/10/1967;2.9;87.99;Scienza;Commissione per le Ricerche Spaziali CRS/CNR;San Marco Equatorial Range, Ngomeny (Kenya);Si
+SAN MARCO 3;P/L (N);1971-036A;226 x 723;24/04/1971;29/11/1971;3.3;94.05;Ricerca ed esplorazione spaziale.;Commissione per le Ricerche Spaziali CRS/CNR;San Marco Equatorial Range, Ngomeny (Kenya);Si
+SAN MARCO 4;P/L (N);1974-009A;175 x 225;18/02/1974;04/05/1976;2.9;88.17;Scienza;Commissione per le Ricerche Spaziali CRS/CNR;San Marco Equatorial Range, Ngomeny (Kenya);Si
+SIRIO;P/L (N);1977-080A;35551 x 35983;25/08/1977;;12.8;1435.1;Telecom.;Consiglio Nazionale delle Ricerche/PSN;Base di Cape Canaveral, Florida, Stati Uniti.;Si
+SAN MARCO 5;P/L (N);1988-026A;166 x 203;25/03/1988;06/12/1988;3;88.17;Scienza;Commissione per le Ricerche Spaziali CRS/CNR;San Marco Equatorial Range, Ngomeny (Kenya);No
+ITALSAT F1;P/L (N);1991-003A;35816 x 35926;15/01/1991;;-;1440.4;Telecom.;ASI;CSG Kourou - Guiana Francese;Si
+LAGEOS 2;P/L (A);1992-070B;5617 x 5951;22/10/1992;;52.6;222.5;Scienza;ASI;Kennedy Space Center, Florida (USA);No
+IRIS R/B;R/B;1992-070D;288 x 4781;22/10/1992;;41.2;139.6;Stadio Propulsivo;ASI;Kennedy Space Center, Florida (USA);No
+LAS DEBRIS (*);MRO;1992-070G;5616 x 5949;22/10/1992;;52.6;;Dispositivo;ASI;Kennedy Space Center, Florida (USA);No
+LAS R/B;R/B;1992-07O;5616 x 5949;;22/10/1992;52.6;222.4;Stadio Propulsivo;ASI;Kennedy Space Center, Florida (USA);No
+IRIS DEBRIS;MRO;1992-070F;177 x 260;23/10/1992;08/08/2005;;;Dispositivo;ASI;Kennedy Space Center, Florida (USA);No
+TEMISAT;P/L (N);1993-055B;936 x 968;31/08/1993;;82.6;104.1;Oss. Terra;Telespazio SpA;Cosmodromo di Pleszek - Federazione Russa;Si
+SAX (Beppo SAX);P/L (N);1996-027A;169 x 169;30/04/1996;30/04/2002;3.95;96.3;Scienza;ASI;Cape Canaveral, Florida (USA);Si
+ITALSAT F2;P/L (N);1996-044A;35692 x 35879;08/08/1996;;± 0.1;1436.0;Telecom.;ASI;CSG Kourou - Guiana Francese;Si
+MEGSAT;P/L (N);1999-022B;142 x 145;28/04/1999;04/11/2003;;;Telecom.;MegSat Brescia;Cosmodromo di Kapustin Yar - Federazione Russa;Si
+MITA-O (NINA);P/L (N);2000-039A;128 x 143;15/07/2000;15/08/2001;;;Tecnologico;ASI;Plesetsk Missile And Space Complex;Si
+MEGSAT 1;P/L (N);2000-057B;607 x 667;26/09/2000;;64.6;97.5;Telecom.;MegSat Brescia;Cosmodromo di Baikonur - Kazakhstan;Si
+SICRAL 1;P/L (N);2001-005A;34371 x 37197;07/02/2001;;4.57;1436.0;Telecom. Militari;Ministero della Difesa italiano;CSG Kourou - Guiana Francese;Si
+AGILE;P/L (N);2007-013A;524 x 553;23/04/2007;13/02/2024;2.5;95.4;Scienza;ASI;Satish Dhawan Space Centre India;Si
+COSMO-SkyMed 1 (CSK 1) First Generation;P/L (A);2007-023A;621 x 624;08/06/2007;;97.9;97.16;Oss. Terra;ASI/ Ministero della Difesa italiano;Vandenberg Space Force Base California, USA;Si
+COSMO-SkyMed 2 (CSK 2) First Generation;P/L (A);2007.059A;621 x 624;09/12/2007;;97.9;09.16;Oss. Terra;ASI/ Ministero della Difesa italiano;Vandenberg Space Force Base California, USA;Si
+COSMO-SkyMed 3 (CSK 3) (**) First Generation;P/L (N);2008-054A;621 x 624;25/10/2008;;97.9;97.16.;Oss. Terra;ASI/ Ministero della Difesa italiano;Vandenberg Space Force Base California, USA;Si
+SICRAL 1B;P/L (N);2009-020A;35785 x 35792;20/04/2009;;0.04;1436.18;Telecom. Militari;Ministero della Difesa italiano;Odyssey (Sea Launch Platform);Si
+COSMO-SkyMed 4 (CSK 4) First Generation;P/L (A);2010-060A;621 x 624;06/11/2010;;97.9;97.16,;Oss. Terra;ASI/ Ministero della Difesa italiano;Vandenberg Space Force Base California, USA;Si
+EDUSAT;P/L (N);2011-044A;640 x 695;17/08/2011;;98.23;98.09;Didattico;ASI - Sapienza University of Rome;Yasniy site, Dombarovskiy Air Base, Orenburgskaya Oblast', Russia;Si
+LARES;P/L (A);2012-006A;1438 x 1450;13/02/2012;;69.49;114.75;Scienza;ASI;CSG Kourou, Guyana Francese;Si
+ALMASAT;P/L (N);2012-006B;313 x 1397;13/02/2012;;69.49;102.04;Tecnologico;ASI/ Università di Bologna;CSG Kourou, Guyana Francese;Si.
+e-st@r-I;P/L (N);2012-006C;350 x 1450;13/02/2013;16/01/2015;69.5;103;Didattico;Politecnico di Torino;CSG Kourou, Guyana Francese;Si,
+UNISAT 5;S/D (N);2013-066F;594 x 640;21/11/2013;;97.8;97.04;Didattico;GAUSS S.r.L;Dombarovsky Cosmodrome di Yasny, Federazione Russa;Si
+UNISAT 6;S/D (A);2014-033C;618 x 701;19/06/2014;;97.97;97.88;Didattico;GAUSS S.r.L;Dombarovsky Cosmodrome di Yasny, Federazione Russa;Si
+Tigrisat;P/L (A);2014-033AK;618 x 701;19.06/2014;;97.97.;97.88;Didattico;Universita di Roma "La Sapienza", Dipartimento di Ingegneria Aeronautica, Elettronica ed Energetica;Dombarovsky Cosmodrome di Yasny, Federazione Russa;Si
+Sicral 2;P/L (A);2015-022B;35796 x 35794;26/04/2015;;0.005;1440;Telecom. Militari;Ministero della Difesa italiano;CSG, Kourou, Guyana francese;Si
+E-st@r 2;P/L (A);2016-025D;442 x 687;25/04/2016;;98.22;95.95;Didattico;Politecnico di Torino;CSG, Kourou, Guyana francese;Si
+TUPOD;P/L (N);1998-067-KY;396 x 407;16/01/2017;08/09/2017;51.64;92.44;Tecnologico;GAUSS s.r.l.;Tyuratam Missile And Space Complex (Baikonur Cosmodrome) Kazakhstan /rilasciato dal modulo Kibo ISS;No
+D-Sat;P/L (N);2017-036AF;502.4 x 516.9;23/06/2017;;97.40;94.70;Scienza;D-Orbit SrL;Satish Dhawan Space Centre Sriharikota India;Si
+OPTSAT 3000;P/L (A);2017-044A;440 x 450;02/08/2017;;97.22;94.2;Oss.Terra/Mil;Ministero della difesa;CSG Kourou, Guyana francese;Si
+Eaglet 1;P/L (N);2018-099AJ;575 x 575;03/12/2018;;97.69;97.168;Oss.Terra/Tec;OHB Italia s.p.a;AIR FORCE WESTERN TEST RANGE Vandenberg, California (USA);No
+PRISMA;P/L (A);2019-015A;616 x 614;02/03/2019;;97.86;97.06;Oss. Terra;ASI;CSG Kourou, Guyana francese;Si
+CSG-1 (Cosmo-SkyMed Second Generation);P/L (A);2019-092A;621 x 619;18/12/2019;;97.86.;97.16;Oss. Terra;ASI e Ministero della Difesa Italiano;CSG Kourou, Guyana francese;Si
+ION-mk01 SCV 001;S/D (A);2020-061C;512 x 522;02/09/2020;;97.40;94.96;Comm./ Tecnol.;D-Orbit;CSG Guyana Francese;Si
+ION SCV 002;S/D (A);2021-006CV;510 x 537;24/01/2021;;97.22;95.11;Comm./ Tecnol.;D-Orbit S.p.A;Air Force Eastern Test Range, Cape Canaveral, Florida, USA;Si
+WildTrackCube-SIMBA*;P/L (A);2021-022K;537 x 562;22/03/2021;;97.5;95;Dimostrazione di tecnologia in orbita;Sapienza Università di Roma, Dipartimento di Ingegneria Meccanica e Aerospaziale;Kazakhstan, Baikonur Cosmodrome;Si
+UNISAT 7;S/D (A);2021-022P;542 x 550;22/03/2021;;97.57;95.42;PL release/Ricerca;GAUSS Srl;BAIKONURTY URATAM MISSILE AND SPACE COMPLEX Kazakhstan;Si
+STECCO;P/L (A);2021-022AG;538 x 561;22/03/2021;;97.5;95.5;Didattico;Scuola di Ingegneria Aerospaziale (Sapienza Università di Roma).;BAIKONUR, TYURATAM MISSILE AND SPACE COMPLEX Kazakhstan;Si
+FEES;P/L (A);2021-0122AL;535 x 559;22/03/2021;;97.6;95.6;Scienza;GP Advanced Projects;BAIKONUR TYURATAM MISSILE AND SPACE COMPLEX Kazakhstan;Si
+TYVAK-182A;P/L (A);2021-034D;610 x 610;29/04/2021;;97.79;96.9;Tecnologico;TYVAK International;CSG Kourou, French Guiana;Si
+ION SCV 003;S/D (A);2021-059AK;524 x 535;30/06/2021;;97.53;95.23;Comm./Tecnol.;D-Orbit;Air Force Eastern Test Range, Cape Canaveral, Florida, USA;Si
+LEDSAT;P/L (A);2021-073D;517 x 554;17/08/2021;;97.51;95.35;Scienza/Tecnol.;Sapienza Università di Roma, Dipartimento di Ingegneria Meccanica e Aerospaziale;CSG Kourou, Guyana Francese;Si
+LICIACUBE;P/L (N);2021-110C;N/A;24/11/2021;23/12/2022;N/A;N/A;Scienza/Tecnol.;ASI;Vandenberg Space Force Base, California USA;Si
+ION SCV 004;S/D (A);2022-002K;523 x 536;13/01/2022;;97.50;95.23;Commerc./ Tecnol.;D-Orbit;Air Force Eastern Test Range, Cape Canaveral, Florida, USA;Si
+COSMO SG2 (Cosmo-SkyMed Second Generation);P/L (A);2022-008A;633 x 652;31/01/2022;;97,87;97.16;Oss. Terra;ASI/Minister o della Difesa Italiano;Air Force Eastern Test Range, Cape Canaveral, Florida, USA;Si
+ION SCV 005;S/D (A);2022-033G;493 x 504;01/04/2022;;97.40;94.587;Commerc./ Operazioni;D-Orbit S.p.A;Air Force Eastern Test Range, Cape Canaveral, Florida, USA;Si
+ION SCV 006;S/D (A);2022-057AF;525 x 539;25/05/2022;;97.50.;95.10;Commerc./ Tecnol.;D-Orbit S.p.A;Air Force Eastern Test Range, Cape Canaveral, Florida, USA;Si
+LARES 2;P/L (A);2022-080A;5882 x 5896;13/07/2022;;70.17;224.06;Scienza;ASI;CSG Kourou Guiana Francese;Si
+GREENCUBE;P/L (A);2022-080B;5838 x 5844;13/07/2022;;70.14;225.27;Scienza;AMSAT Italia/La Sapienza Università di Roma;CSG Kourou, Guiana Francese;Si
+ASTROBIO;P/L (A);2022-090C;5838 x 5844;;;70.14;225.2;Scienza;ASI - Istituto nazionale di Astrofisica (INAF);CSG Kourou, Guiana Francese;Si
+ALPHA;P/L (A);2022-070F;5835.969 x 5846.694;13/07/2022;;70.1560;224.05;Dimostrazione di tecnologia in orbita;ARCA Dynamics;CSG Kourou, Guiana Francese;No
+ARGOMOON;P/L (N);2022-156G;N/A;16/11/2022;17/03/2023;N/A;N/A;Tecnologico;ASI;Cape Canaveral, Florida USA;Si
+ION SCV 007;S/D (A);2023-001BD;531 x 516;03/01/2023;;97.503;95.186;Commerz./ Operazioni;D-Orbit S.p.A;Cape Canaveral, Florida USA;Si
+ION SCV 008;S/D (A);2023-101AU;531 x 516;02/01/2023;;97,503;95.186;Commerz./ Operazioni;D-Orbit S.p.A;Cape Canaveral, Florida USA;Si
+ION SCV 009;S/D (N);2023-014BC;330 x 340;31/01/2023;14/02/2024;70.009;91.7718;Commerz./ Operazioni;D-Orbit S.p.A;Vandenberg, California (USA);Si
+ION SCV 010;S/D (A);2023-054Q;493.486 x 502.141;15/04/2023;;97.411;94.8311;Commerz./ Operazioni;D-Orbit S.p.A;Vandenberg, California (USA);Si
+REVELA;P/L (NA);2023-054 AY;494 x 510;31/05/2023;;97.40;94.52;Dimostraz. di tecnologia in orbita;ARCA Dynamics.;Vandenberg Space Force Base, California, USA;No
+ION SCV 011;S/D (A);2023-084AB;515.559 x 531.712;12/06/2023;;97.510;95.139;Commerz./ Operazioni;D-Orbit S.p.A;Vandenberg, California USA;Si
+ION SCV 1013;S/D (A);2023-174AW;518.801 x 520.840;11/11/2023;;97.481;95.101;Commerz./ Operazioni;D-Orbit S.p.A;Vandenberg, California USA;Si
+ION SCV 015;S/D (A);2023-185H;555.620 x 563.396;26/11/2023;;97,643;95.849;Commerz./ Operazioni;D-Orbit S.p.A;Vandenberg, California USA;Si
+Spei Satelles;P/L (A);2023-084BT;521.66 x 523.94;12/06/2023;N7A;97.51;95.11;Scientifico / Tecnologico;ASI;Vandenberg, California USA;No
+PICO-01E001;P/L (A);2023-174CV;525 x 525;22/11/2023;25/06/2024;95.5;96;Telecomunic.;Apogeo space srl;Air Force Western Test Range Vandenberg USA;No
+PICO-01D007;P/L (A);2023-204DE;525 x 525;21/11/2023;02/2025;97.5;96;Telecomunic.;Apogeo space srl;Vandenberg, California USA;No
+PICO-01F006;P/L (A);2023-214CU;525 x 525;23/11/2023;27/06/2024;97.5;96;Telecomunic.;Apogeo space srl;Vandenberg Space Force;No
