@@ -9,7 +9,7 @@ export function Header({ activeSection }: HeaderProps) {
   return (
     <header className="sticky top-0 z-40 border-b border-black/[0.06] bg-[#F5F5F7]/85 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-[1200px] items-center gap-4 px-4 sm:px-6">
-        <a href="#panoramica" className="flex shrink-0 items-center gap-2.5">
+        <a href="#satcat" className="flex shrink-0 items-center gap-2.5">
           <span className="grid h-8 w-8 place-items-center rounded-xl bg-[#007AFF] text-white shadow-sm">
             <Orbit size={17} strokeWidth={2.2} />
           </span>

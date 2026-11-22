@@ -142,9 +142,15 @@ export function DataTable({ records }: DataTableProps) {
   return (
     <section id="dati" className="scroll-mt-24">
       <SectionHeader
-        number="05"
+        number="06"
         title="Esplora i dati"
-        description="La tabella contiene i satelliti del censimento UCS arricchiti con i dati orbitali del catalogo SATCAT. Cerca, ordina ed esporta la selezione corrente."
+        description={
+          <>
+            La tabella contiene i satelliti del censimento UCS arricchiti con i dati orbitali del catalogo SATCAT.
+            <br />
+            Cerca, ordina ed esporta la selezione corrente.
+          </>
+        }
       />
 
       <div className="overflow-hidden rounded-2xl border border-black/[0.06] bg-white">

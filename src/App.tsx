@@ -27,7 +27,7 @@ const dataset = datasetJson as unknown as DatasetFile;
 
 export default function App() {
   const [filters, setFilters] = useState<Filters>(DEFAULT_FILTERS);
-  const [activeSection, setActiveSection] = useState<string>('panoramica');
+  const [activeSection, setActiveSection] = useState<string>('satcat');
 
   const records = useMemo(() => applyFilters(dataset.satellites, filters), [filters]);
 
@@ -74,30 +74,31 @@ export default function App() {
     <div className="min-h-screen">
       <Header activeSection={activeSection} />
 
-      <main className="mx-auto max-w-[1200px] px-4 pb-16 sm:px-6">
-        <section id="panoramica" className="scroll-mt-24">
-          <Hero meta={dataset.meta} />
-          <FilterBar
-            filters={filters}
-            onChange={setFilters}
-            onReset={() => setFilters(DEFAULT_FILTERS)}
-            purposeOptions={purposeOptions}
-            userOptions={userOptions}
-            orbitOptions={orbitOptions}
-            resultCount={records.length}
-          />
-          <OverviewSection
-            records={records}
-            timelineRecords={timelineRecords}
-            meta={dataset.meta}
-            period={filters.period}
-          />
-        </section>
-
-        <div className="mt-14 space-y-14 sm:mt-16 sm:space-y-16">
-          <OperatorsSection records={records} />
-          <PurposesSection records={records} />
+      <main className="mx-auto max-w-[1200px] px-4 pb-16 pt-8 sm:px-6 sm:pt-12">
+        <div className="space-y-14 sm:space-y-16">
           <SatcatSection catalog={dataset.meta.catalog} />
+
+          <section id="ucs" className="scroll-mt-24">
+            <Hero meta={dataset.meta} />
+            <FilterBar
+              filters={filters}
+              onChange={setFilters}
+              onReset={() => setFilters(DEFAULT_FILTERS)}
+              purposeOptions={purposeOptions}
+              userOptions={userOptions}
+              orbitOptions={orbitOptions}
+              resultCount={records.length}
+            />
+            <OverviewSection
+              records={records}
+              timelineRecords={timelineRecords}
+              meta={dataset.meta}
+              period={filters.period}
+            />
+          </section>
+
+          <PurposesSection records={records} />
+          <OperatorsSection records={records} />
           <ItalySection italy={dataset.italy} />
           <DataTable records={records} />
         </div>

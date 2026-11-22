@@ -143,10 +143,10 @@ export const DEFAULT_FILTERS: Filters = {
 };
 
 export const NAV_ITEMS = [
-  { id: 'panoramica', label: 'Panoramica' },
-  { id: 'operatori', label: 'Operatori' },
+  { id: 'satcat', label: 'SATCAT' },
+  { id: 'ucs', label: 'UCS' },
   { id: 'scopi', label: 'Scopi' },
-  { id: 'satcat', label: 'Catalogo SATCAT' },
+  { id: 'operatori', label: 'Operatori' },
   { id: 'italia', label: 'Italia' },
   { id: 'dati', label: 'Dati' },
 ] as const;

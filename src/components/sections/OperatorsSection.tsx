@@ -91,7 +91,7 @@ export function OperatorsSection({ records }: OperatorsSectionProps) {
   return (
     <section id="operatori" className="scroll-mt-24">
       <SectionHeader
-        number="02"
+        number="04"
         title="Pochi operatori, molti satelliti"
         description="La flotta è concentrata nelle mani di poche aziende e pochi paesi. Le barre mostrano quanti satelliti gestisce ogni operatore e da dove opera."
       />

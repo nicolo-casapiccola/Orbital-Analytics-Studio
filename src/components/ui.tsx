@@ -4,7 +4,7 @@ import { Lightbulb } from 'lucide-react';
 interface SectionHeaderProps {
   number: string;
   title: string;
-  description: string;
+  description: ReactNode;
   badge?: string;
 }
 

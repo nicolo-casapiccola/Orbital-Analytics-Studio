@@ -10,7 +10,7 @@ export function Hero({ meta }: HeroProps) {
     <div className="pb-6 pt-10 sm:pb-8 sm:pt-14">
       <div className="flex flex-wrap items-center gap-2 text-[11px] font-medium text-[#6E6E73]">
         <span className="rounded-full bg-[#007AFF]/10 px-2.5 py-1 font-mono font-semibold tracking-[0.12em] text-[#007AFF]">
-          PANORAMICA
+          UCS
         </span>
         <span className="rounded-full border border-black/[0.08] bg-white px-2.5 py-1">
           UCS · aprile 2023
