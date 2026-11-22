@@ -1,0 +1,6 @@
+{
+  "name": "Orbital Analytics Studio",
+  "description": "Presentazione interattiva dei satelliti in orbita: crescita dei lanci, operatori, scopi e detriti spaziali. Dati UCS e SATCAT incrociati.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
