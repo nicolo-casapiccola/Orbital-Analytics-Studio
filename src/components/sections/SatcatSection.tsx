@@ -11,7 +11,6 @@ import {
   Info,
   ChevronLeft,
   ChevronRight,
-  ChevronDown,
 } from 'lucide-react';
 
 interface SatcatSectionProps {
@@ -24,7 +23,6 @@ type GallerySlide = 'numbers' | 'insights';
 export function SatcatSection({ catalog }: SatcatSectionProps) {
   const [viewMode, setViewMode] = useState<TimelineViewMode>('all');
   const [gallerySlide, setGallerySlide] = useState<GallerySlide>('numbers');
-  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
 
   const timeline = catalog.timeline || [];
   const insights = catalog.insights;
@@ -377,102 +375,80 @@ export function SatcatSection({ catalog }: SatcatSectionProps) {
         </div>
       </ChartCard>
 
-      {/* 3. Box compatto ed espandibile (Accordion) che spiega nel dettaglio i numeri dell'orbita */}
-      <div className="mt-4 overflow-hidden rounded-2xl border border-black/[0.06] bg-[#F5F5F7]/80">
-        <button
-          type="button"
-          onClick={() => setIsDetailsOpen(!isDetailsOpen)}
-          className="flex w-full items-center justify-between gap-3 p-4 text-left transition-colors hover:bg-black/[0.02]"
-        >
-          <div className="flex items-center gap-2 text-[13px] text-[#1D1D1F]">
-            <Info size={16} className="shrink-0 text-[#007AFF]" />
-            <span className="font-semibold">Cosa c&apos;è oggi nello spazio?</span>
-            <span className="hidden text-[#6E6E73] sm:inline">
-              Dettaglio dei 32.915 oggetti suddivisi tra satelliti operativi, detriti, stadi e componenti
-            </span>
-          </div>
+      {/* 3. Box informativo che spiega nel dettaglio i numeri dell'orbita */}
+      <div className="mt-4 rounded-2xl border border-black/[0.06] bg-white p-4 sm:p-5">
+        <div className="flex items-center gap-2 text-[13.5px] text-[#1D1D1F]">
+          <Info size={16} className="shrink-0 text-[#007AFF]" />
+          <span className="font-semibold">Cosa c&apos;è oggi nello spazio?</span>
+          <span className="hidden text-[#6E6E73] sm:inline">
+            — Dettaglio dei {formatNumber(catalog.inOrbit)} oggetti suddivisi tra satelliti operativi, detriti, stadi e componenti
+          </span>
+        </div>
 
-          <div className="flex items-center gap-2 shrink-0">
-            <span className="text-[11px] font-medium text-[#007AFF]">
-              {isDetailsOpen ? 'Comprimi' : 'Espandi dettaglio'}
-            </span>
-            <ChevronDown
-              size={17}
-              className={`text-[#6E6E73] transition-transform duration-200 ${
-                isDetailsOpen ? 'rotate-180' : ''
-              }`}
-            />
-          </div>
-        </button>
+        <p className="mt-2.5 text-[12.5px] text-[#52525B]">
+          Dei <strong>{formatNumber(catalog.inOrbit)} oggetti attualmente in orbita</strong> attorno alla Terra:
+        </p>
 
-        {isDetailsOpen ? (
-          <div className="border-t border-black/[0.06] bg-white p-4.5 sm:p-5">
-            <p className="text-[12.5px] text-[#52525B]">
-              Dei <strong>{formatNumber(catalog.inOrbit)} oggetti attualmente in orbita</strong> attorno alla Terra:
-            </p>
-
-            <div className="mt-3 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-xl border border-blue-200/80 bg-[#F0F7FF] p-3">
-                <div className="flex items-center gap-1.5 font-semibold text-[#007AFF] text-[12px]">
-                  <span className="h-2 w-2 rounded-full bg-[#007AFF]" />
-                  Satelliti (Payload)
-                </div>
-                <div className="mt-1 text-[16px] font-bold text-[#1D1D1F]">
-                  {formatNumber(insights?.payloadsInOrbit ?? 18128)}{' '}
-                  <span className="text-[11.5px] font-normal text-[#8E8E93]">(55,1%)</span>
-                </div>
-                <p className="mt-0.5 text-[11px] text-[#6E6E73]">
-                  Satelliti completi (operativi o dismessi).
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-red-200/80 bg-[#FFF5F5] p-3">
-                <div className="flex items-center gap-1.5 font-semibold text-[#FF3B30] text-[12px]">
-                  <span className="h-2 w-2 rounded-full bg-[#FF3B30]" />
-                  Frammenti di detriti
-                </div>
-                <div className="mt-1 text-[16px] font-bold text-[#1D1D1F]">
-                  {formatNumber(catalog.debrisInOrbit)}{' '}
-                  <span className="text-[11.5px] font-normal text-[#8E8E93]">(34,6%)</span>
-                </div>
-                <p className="mt-0.5 text-[11px] text-[#6E6E73]">
-                  Schegge da esplosioni, test ASAT o collisioni.
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-amber-200/80 bg-[#FFFBF0] p-3">
-                <div className="flex items-center gap-1.5 font-semibold text-[#FF9500] text-[12px]">
-                  <span className="h-2 w-2 rounded-full bg-[#FF9500]" />
-                  Stadi di razzo
-                </div>
-                <div className="mt-1 text-[16px] font-bold text-[#1D1D1F]">
-                  2.008 <span className="text-[11.5px] font-normal text-[#8E8E93]">(6,1%)</span>
-                </div>
-                <p className="mt-0.5 text-[11px] text-[#6E6E73]">
-                  Ultimi stadi propulsivi abbandonati dopo il lancio.
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-purple-200/80 bg-[#FAF5FF] p-3">
-                <div className="flex items-center gap-1.5 font-semibold text-[#7A5AF8] text-[12px]">
-                  <span className="h-2 w-2 rounded-full bg-[#7A5AF8]" />
-                  Componenti
-                </div>
-                <div className="mt-1 text-[16px] font-bold text-[#1D1D1F]">
-                  1.389 <span className="text-[11.5px] font-normal text-[#8E8E93]">(4,2%)</span>
-                </div>
-                <p className="mt-0.5 text-[11px] text-[#6E6E73]">
-                  Adattatori, coperture e meccanismi di rilascio.
-                </p>
-              </div>
+        <div className="mt-3 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-xl border border-blue-200/80 bg-[#F0F7FF] p-3">
+            <div className="flex items-center gap-1.5 font-semibold text-[#007AFF] text-[12px]">
+              <span className="h-2 w-2 rounded-full bg-[#007AFF]" />
+              Satelliti (Payload)
             </div>
-
-            <p className="mt-3 text-[12px] leading-relaxed text-[#6E6E73]">
-              Sommando i frammenti di detriti (11.390), gli stadi di razzo (2.008) e i componenti (1.389),
-              i <strong>relitti non funzionali in orbita ammontano a 14.787</strong> (il <strong>44,9%</strong> di tutto ciò che fluttua nello spazio).
+            <div className="mt-1 text-[16px] font-bold text-[#1D1D1F]">
+              {formatNumber(insights?.payloadsInOrbit ?? 18128)}{' '}
+              <span className="text-[11.5px] font-normal text-[#8E8E93]">(55,1%)</span>
+            </div>
+            <p className="mt-0.5 text-[11px] text-[#6E6E73]">
+              Satelliti completi (operativi o dismessi).
             </p>
           </div>
-        ) : null}
+
+          <div className="rounded-xl border border-red-200/80 bg-[#FFF5F5] p-3">
+            <div className="flex items-center gap-1.5 font-semibold text-[#FF3B30] text-[12px]">
+              <span className="h-2 w-2 rounded-full bg-[#FF3B30]" />
+              Frammenti di detriti
+            </div>
+            <div className="mt-1 text-[16px] font-bold text-[#1D1D1F]">
+              {formatNumber(catalog.debrisInOrbit)}{' '}
+              <span className="text-[11.5px] font-normal text-[#8E8E93]">(34,6%)</span>
+            </div>
+            <p className="mt-0.5 text-[11px] text-[#6E6E73]">
+              Schegge da esplosioni, test ASAT o collisioni.
+            </p>
+          </div>
+
+          <div className="rounded-xl border border-amber-200/80 bg-[#FFFBF0] p-3">
+            <div className="flex items-center gap-1.5 font-semibold text-[#FF9500] text-[12px]">
+              <span className="h-2 w-2 rounded-full bg-[#FF9500]" />
+              Stadi di razzo
+            </div>
+            <div className="mt-1 text-[16px] font-bold text-[#1D1D1F]">
+              2.008 <span className="text-[11.5px] font-normal text-[#8E8E93]">(6,1%)</span>
+            </div>
+            <p className="mt-0.5 text-[11px] text-[#6E6E73]">
+              Ultimi stadi propulsivi abbandonati dopo il lancio.
+            </p>
+          </div>
+
+          <div className="rounded-xl border border-purple-200/80 bg-[#FAF5FF] p-3">
+            <div className="flex items-center gap-1.5 font-semibold text-[#7A5AF8] text-[12px]">
+              <span className="h-2 w-2 rounded-full bg-[#7A5AF8]" />
+              Componenti
+            </div>
+            <div className="mt-1 text-[16px] font-bold text-[#1D1D1F]">
+              1.389 <span className="text-[11.5px] font-normal text-[#8E8E93]">(4,2%)</span>
+            </div>
+            <p className="mt-0.5 text-[11px] text-[#6E6E73]">
+              Adattatori, coperture e meccanismi di rilascio.
+            </p>
+          </div>
+        </div>
+
+        <p className="mt-3 text-[12px] leading-relaxed text-[#6E6E73]">
+          Sommando i frammenti di detriti (11.390), gli stadi di razzo (2.008) e i componenti (1.389),
+          i <strong>relitti non funzionali in orbita ammontano a 14.787</strong> (il <strong>44,9%</strong> di tutto ciò che fluttua nello spazio).
+        </p>
       </div>
 
       {/* 4. Grafici di composizione ed età dell'orbita */}
